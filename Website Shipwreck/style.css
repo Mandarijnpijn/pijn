@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    min-height: 1500px;
+    line-height: 1.5;
+}
+
+/* banner */
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)), url(images/bg\ shipwreck.jpg);
+    background-size: cover;
+
+
+}
+
+/*banner contents*/
+
+.banner .bannertext {
+    max-width: 800px;
+    text-align: center;
+    padding-left: 10vh;
+}
+
+.banner .bannertext h2 {
+    font-size: 5em;
+    color: #fff;
+}
+
+.banner .bannertext p {
+    font-size: 1.4em;
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+}
+
+.homebutton {
+    font-size: 1em;
+    color: #fff;
+    background: #2a253d;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    transition: 0.1s;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.homebutton:hover {
+    background-color: rgb(88, 138, 138);
+    transition: 0.2s;
+    border: 2px solid rgb(88, 138, 138);
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    padding: 0;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+/* navigation */
+.logo img {
+    max-width: 100px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+header.sticky {
+    margin: 0;
+    padding: 0;
+    transition: .3s ease-out;
+    transform-origin: -50px -50px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+header .navigation {
+    margin-right: 90px;
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #00d9ff;
+    ;
+    font-weight: 300;
+    width: 300px;
+}
+
+header .navigation li a:hover {
+
+    color: #000000;
+    font-weight: 400;
+}
+
+.search-container {
+    padding-left: 10px;
+    font-size: 17px;
+}
